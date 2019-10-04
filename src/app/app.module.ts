@@ -4,13 +4,19 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { CdkTableComponent } from './cdkTable/cdk-table.component';
+
+import { CdkTableModule } from '@angular/cdk/table';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CdkTableComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CdkTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

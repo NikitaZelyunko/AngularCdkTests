@@ -1,0 +1,8 @@
+<cdk-table [dataSource]="table.rows">
+  <ng-container *ngFor="let header of table.header" [cdkColumnDef]=header.name>
+    <cdk-header-cell *cdkHeaderCellDef>{{ header.config.title }}</cdk-header-cell>
+    <cdk-cell *cdkCellDef="let row">{{ row[header.name].value }}</cdk-cell>
+  </ng-container>
+  <cdk-header-row *cdkHeaderRowDef="table.headersNames; sticky: true"></cdk-header-row>
+  <cdk-row *cdkRowDef="let row; columns: table.headersNames"></cdk-row>
+</cdk-table>

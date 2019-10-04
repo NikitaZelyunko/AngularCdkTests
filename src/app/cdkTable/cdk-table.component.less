@@ -1,0 +1,25 @@
+cdk-table {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  cdk-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    cdk-header-cell {
+      flex-basis: 100px;
+      margin-right: 4px;
+    }
+  }
+  cdk-row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    cdk-cell {
+      flex-basis: 100px;
+      margin-right: 4px;
+    }
+  }
+}
